@@ -1,0 +1,26 @@
+{
+  "name": "100doccop",
+  "version": "1.0.0",
+  "description": "100DaysOfCode - Cop, twitter bot.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProCode2/100DaysOfCodeCop.git"
+  },
+  "author": "ProCode",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ProCode2/100DaysOfCodeCop/issues"
+  },
+  "homepage": "https://github.com/ProCode2/100DaysOfCodeCop#readme",
+  "dependencies": {
+    "twit": "^2.2.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
