@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/ProCode2/100DaysOfCodeCop#readme",
   "dependencies": {
+    "knex": "^0.21.1",
+    "pg": "^8.2.1",
     "twit": "^2.2.11"
   },
   "devDependencies": {
