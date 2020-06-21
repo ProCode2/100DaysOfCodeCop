@@ -1,14 +1,7 @@
 const Twit = require('twit');
 const config = require('./config.js');
-const db = require('knex')({
-  client: 'pg',
-  connection: {
-    host : '127.0.0.1',
-    user : 'prem',
-    password : '12345',
-    database : '100DOCCop'
-  }
-});
+const dbconfig = require('./dbconfig.js');
+const db = require('knex')(dbconfig);
 
 const T = new Twit(config);
 
