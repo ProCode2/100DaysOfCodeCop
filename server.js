@@ -16,6 +16,7 @@ stream.on('tweet', mentioned);
 
 function mentioned(event){
 	console.log(event);
+	if(event.in_reply_to_status_id_str !== null){
 	console.log(`${event.in_reply_to_screen_name} is reported by ${event.user.name}`);
 	db('reports').insert({
 		reported_at: event.created_at,
@@ -39,4 +40,5 @@ function mentioned(event){
 			}
 		});
 	});
+	}
 }
